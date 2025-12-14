@@ -15,13 +15,13 @@
     
 
     
-<link rel="stylesheet" href="/wk.github.io/css/style.css">
+<link rel="stylesheet" href="/css/style.css">
 
     
-<link rel="stylesheet" href="/wk.github.io/css/color.css">
+<link rel="stylesheet" href="/css/color.css">
 
     
-<link rel="stylesheet" href="/wk.github.io/css/widgets/page-transition.css">
+<link rel="stylesheet" href="/css/widgets/page-transition.css">
 
  
     
@@ -32,8 +32,8 @@
     <mdui-button-icon class="appbar-menu-button">
         <mdui-icon name="menu"></mdui-icon>
     </mdui-button-icon>
-    <mdui-top-app-bar-title onclick="window.location.href='/wk.github.io/'" style="cursor: pointer;">
-        你的博客标题
+    <mdui-top-app-bar-title onclick="window.location.href='/'" style="cursor: pointer;">
+        ��Ĳ��ͱ���
     </mdui-top-app-bar-title>
         <mdui-dropdown>
             <div slot="trigger">
@@ -252,7 +252,7 @@ class HexoSearch {
 
     async preloadSearchData() {
         try {
-            const response = await fetch('/wk.github.io/search.json');
+            const response = await fetch('/search.json');
             this.searchData = await response.json();
         } catch (error) {
             console.error('搜索数据加载失败:', error);
@@ -783,7 +783,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
                 <mdui-list-item 
                     class="nav-item"
-                    href="/wk.github.io/"
+                    href="/"
                     rounded
                     
                     active
@@ -795,7 +795,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
                 <mdui-list-item 
                     class="nav-item"
-                    href="/wk.github.io/archives/"
+                    href="/archives/"
                     rounded
                     
                     variant="filled"
@@ -807,7 +807,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
                 <mdui-list-item 
                     class="nav-item"
-                    href="/wk.github.io/categories/"
+                    href="/categories/"
                     rounded
                     
                     variant="filled"
@@ -819,7 +819,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
                 <mdui-list-item 
                     class="nav-item"
-                    href="/wk.github.io/tags/"
+                    href="/tags/"
                     rounded
                     
                     variant="filled"
@@ -831,7 +831,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
                 <mdui-list-item 
                     class="nav-item"
-                    href="/wk.github.io/about/"
+                    href="/about/"
                     rounded
                     
                     variant="filled"
@@ -843,7 +843,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
                 <mdui-list-item 
                     class="nav-item"
-                    href="/wk.github.io/links/"
+                    href="/links/"
                     rounded
                     
                     variant="filled"
@@ -855,7 +855,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
                 <mdui-list-item 
                     class="nav-item"
-                    href="/wk.github.io/shuoshuo/"
+                    href="/shuoshuo/"
                     rounded
                     
                     variant="filled"
@@ -924,7 +924,7 @@ if (location.pathname !== '/post/') {
                 <mdui-card 
     class="article-card" 
     variant="filled"
-    onclick="location.href='/wk.github.io/2025/12/14/hello-world/'">
+    onclick="location.href='/2025/12/14/hello-world/'">
     
     <div class="article-content">
         <!-- 封面图片 -->
@@ -979,7 +979,7 @@ Qu...</span>
         <mdui-chip variant="filled" class="footer-chip">
           <mdui-icon name="copyright" slot="icon"></mdui-icon>
           &copy; 2025 
-          <a href="/wk.github.io/" class="site-link">你的博客标题</a>
+          <a href="/" class="site-link">��Ĳ��ͱ���</a>
           
             · © 2024 你的博客
           
